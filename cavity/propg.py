@@ -183,12 +183,13 @@ if __name__== "__main__":
  ev_to_h=27.21138386
  freq=0.185/ev_to_h
  w_eg=2.0/ev_to_h
- reorg_erg=0.5*0.14/ev_to_h
  d=0.87
+ reorg_erg=0.5*d*d*freq
+ 
 
  # The parameter of the cavity.
  n_fock=5
- freq_cavity=1.9/ev_to_h
+ freq_cavity=w_eg+reorg_erg
  g=0.08/ev_to_h
 
  # The parameters for the propagation.
